@@ -1,0 +1,33 @@
+{
+  "date":"27/08/2018",
+  "units":[
+    {
+      "unit":"G1001",
+      "distance":300,
+      "engine":"3h8m",
+      "avgSpeed":108,
+      "maxSpeed":140
+    },
+    {
+      "unit":"T10",
+      "distance":300,
+      "engine":"3h8m",
+      "avgSpeed":108,
+      "maxSpeed":140
+    },
+    {
+      "unit":"CA3",
+      "distance":300,
+      "engine":"3h8m",
+      "avgSpeed":108,
+      "maxSpeed":140
+    },
+    {
+      "unit":"CA2",
+      "distance":300,
+      "engine":"3h8m",
+      "avgSpeed":108,
+      "maxSpeed":140
+    }
+  ]
+}

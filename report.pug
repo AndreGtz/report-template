@@ -1,0 +1,28 @@
+html
+  head
+    style
+      include style.css
+  body
+    .container
+      .header
+        span.title.bold CAEBES
+        span.date #{date}
+      hr.top
+      each vehicle in units
+        .data
+          .name
+            span.name #{vehicle.unit}
+          .stats
+            p 
+              span.bold Distancia
+              span.secondary : #{vehicle.distance}km
+            p 
+              span.bold Tiempo de encendido de motor
+              span.secondary : #{vehicle.engine}
+            p 
+              span.bold Velocidad promedio
+              span.secondary : #{vehicle.avgSpeed}km/hr
+            p 
+              span.bold Velocidad máxima
+              span.secondary : #{vehicle.maxSpeed}km/hr
+        hr

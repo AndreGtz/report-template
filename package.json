@@ -1,0 +1,16 @@
+{
+  "name": "report-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "hrs",
+    "pug": "pug -w -O opts.json report.pug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andre",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^2.0.3"
+  }
+}

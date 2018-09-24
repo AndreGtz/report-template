@@ -1,0 +1,66 @@
+<html><head><style>:root{
+  /* colors */
+  --highlight: #C3DF4E;
+  --dark: #4A581E;
+  --primary: #65A29A;
+  --secondary: #455181;
+
+  /* document size */
+  --doc-margin-side: 35px;
+  --doc-margin-top: 75px;
+  --doc-height: 1122px;
+  --doc-width: 793px;
+}
+
+.container {
+  margin: var(--doc-margin-top) var(--doc-margin-side);
+  height: calc(var(--doc-height) - var(--doc-margin-top));
+  width: calc(var(--doc-width) - var(--doc-margin-side));
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > .title {
+  font-family: monospace;
+  font-size: 2em;
+  color: var(--highlight);
+}
+
+.header > .date {
+  font-family: sans-serif;
+  color: var(--primary);
+}
+
+.data {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data > .name {
+  font-family: monospace;
+  font-size: 2em;
+  color: var(--primary);
+}
+
+
+hr.top {
+  background-color: var(--dark);
+  height: 10px;
+  border: 0px;
+}
+
+/* text styles */
+.bold {
+  font-weight: bold;
+}
+
+.secondary {
+  color: var(--secondary);
+}
+</style></head><body><div class="container"><div class="header"><span class="title bold">CAEBES</span><span class="date">27/08/2018</span></div><hr class="top"/><div class="data"><div class="name"><span class="name">G1001</span></div><div class="stats"><p> <span class="bold">Distancia</span><span class="secondary">: 300km</span></p><p> <span class="bold">Tiempo de encendido de motor</span><span class="secondary">: 3h8m</span></p><p> <span class="bold">Velocidad promedio</span><span class="secondary">: 108km/hr</span></p><p> <span class="bold">Velocidad máxima</span><span class="secondary">: 140km/hr</span></p></div></div><hr/><div class="data"><div class="name"><span class="name">T10</span></div><div class="stats"><p> <span class="bold">Distancia</span><span class="secondary">: 300km</span></p><p> <span class="bold">Tiempo de encendido de motor</span><span class="secondary">: 3h8m</span></p><p> <span class="bold">Velocidad promedio</span><span class="secondary">: 108km/hr</span></p><p> <span class="bold">Velocidad máxima</span><span class="secondary">: 140km/hr</span></p></div></div><hr/><div class="data"><div class="name"><span class="name">CA3</span></div><div class="stats"><p> <span class="bold">Distancia</span><span class="secondary">: 300km</span></p><p> <span class="bold">Tiempo de encendido de motor</span><span class="secondary">: 3h8m</span></p><p> <span class="bold">Velocidad promedio</span><span class="secondary">: 108km/hr</span></p><p> <span class="bold">Velocidad máxima</span><span class="secondary">: 140km/hr</span></p></div></div><hr/><div class="data"><div class="name"><span class="name">CA2</span></div><div class="stats"><p> <span class="bold">Distancia</span><span class="secondary">: 300km</span></p><p> <span class="bold">Tiempo de encendido de motor</span><span class="secondary">: 3h8m</span></p><p> <span class="bold">Velocidad promedio</span><span class="secondary">: 108km/hr</span></p><p> <span class="bold">Velocidad máxima</span><span class="secondary">: 140km/hr</span></p></div></div><hr/></div></body></html>

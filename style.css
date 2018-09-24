@@ -1,0 +1,65 @@
+:root{
+  /* colors */
+  --highlight: #C3DF4E;
+  --dark: #4A581E;
+  --primary: #65A29A;
+  --secondary: #455181;
+
+  /* document size */
+  --doc-margin-side: 35px;
+  --doc-margin-top: 75px;
+  --doc-height: 1122px;
+  --doc-width: 793px;
+}
+
+.container {
+  margin: var(--doc-margin-top) var(--doc-margin-side);
+  height: calc(var(--doc-height) - var(--doc-margin-top));
+  width: calc(var(--doc-width) - var(--doc-margin-side));
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > .title {
+  font-family: monospace;
+  font-size: 2em;
+  color: var(--highlight);
+}
+
+.header > .date {
+  font-family: sans-serif;
+  color: var(--primary);
+}
+
+.data {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data > .name {
+  font-family: monospace;
+  font-size: 2em;
+  color: var(--primary);
+}
+
+
+hr.top {
+  background-color: var(--dark);
+  height: 10px;
+  border: 0px;
+}
+
+/* text styles */
+.bold {
+  font-weight: bold;
+}
+
+.secondary {
+  color: var(--secondary);
+}
