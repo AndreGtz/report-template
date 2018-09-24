@@ -1,7 +1,7 @@
 :root{
   /* colors */
   --highlight: #C3DF4E;
-  --dark: #4A581E;
+  --#4A581E: #4A581E;
   --primary: #65A29A;
   --secondary: #455181;
 
@@ -12,63 +12,65 @@
   --doc-width: 793px;
 }
 
-.container {
-  margin: var(--doc-margin-top) var(--doc-margin-side);
-  height: calc(var(--doc-height) - var(--doc-margin-top));
-  width: calc(var(--doc-width) - var(--doc-margin-side));
-}
+@media print {
+  .container {
+    margin: 75px 35px;
+    height: calc(1122px - 75px);
+    width: calc(793px - 35px);
+  }
 
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.header > .title {
-  font-family: monospace;
-  font-size: 2em;
-  color: var(--highlight);
-}
+  .header > .title {
+    font-family: monospace;
+    font-size: 2em;
+    color: #C3DF4E;
+  }
 
-.header > .date {
-  font-family: sans-serif;
-  color: var(--primary);
-}
+  .header > .date {
+    font-family: sans-serif;
+    color: #65A29A;
+  }
 
-.data {
-  font-family: sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: row wrap;
-  align-content: space-between;
-  margin: 3rem 0 3rem;
-}
+  .data {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    align-content: space-between;
+    margin: 3rem 0 3rem;
+  }
 
-.data > .name {
-  font-family: monospace;
-  font-size: 2em;
-  color: var(--primary);
-}
+  .data > .name {
+    font-family: monospace;
+    font-size: 2em;
+    color: #65A29A;
+  }
 
-.data .speeds{
-  width: 100%;
-  margin-top: 1rem;
-}
+  .data .speeds{
+    width: 100%;
+    margin-top: 1rem;
+  }
 
 
-hr.top {
-  background-color: var(--dark);
-  height: 10px;
-  border: 0px;
-}
+  hr.top {
+    background-color: #4A581E;
+    height: 10px;
+    border: 0px;
+  }
 
-/* text styles */
-.bold {
-  font-weight: bold;
-}
+  /* text styles */
+  .bold {
+    font-weight: bold;
+  }
 
-.secondary {
-  color: var(--secondary);
+  .secondary {
+    color: #455181;
+  }
 }
