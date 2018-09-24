@@ -9,7 +9,7 @@ html
         span.date #{date}
       hr.top
       each vehicle in units
-        .data
+        div(class='data vehicle')
           .name
             span.name #{vehicle.unit}
           .stats
@@ -20,9 +20,11 @@ html
               span.bold Tiempo de encendido de motor
               span.secondary : #{vehicle.engine}
             p 
-              span.bold Velocidad promedio
-              span.secondary : #{vehicle.avgSpeed}km/hr
-            p 
-              span.bold Velocidad máxima
-              span.secondary : #{vehicle.maxSpeed}km/hr
+              span.bold Uso de combustible aproximado
+              span.secondary : #{vehicle.gas}L
+          .speeds(data-speed=vehicle.speeds)
+            canvas.chart
         hr
+    script(src='node_modules/chart.js/dist/Chart.bundle.min.js')
+    script(src='node_modules/moment/min/moment.min.js')
+    script(src='app.js')

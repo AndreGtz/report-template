@@ -20,6 +20,7 @@
 
 .header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -40,12 +41,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-flow: row wrap;
+  align-content: space-between;
+  margin: 3rem 0 3rem;
 }
 
 .data > .name {
   font-family: monospace;
   font-size: 2em;
   color: var(--primary);
+}
+
+.data .speeds{
+  width: 100%;
+  margin-top: 1rem;
 }
 
 

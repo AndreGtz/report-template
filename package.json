@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "hrs",
+    "serve": "http-server .",
     "pug": "pug -w -O opts.json report.pug",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,5 +12,11 @@
   "license": "ISC",
   "dependencies": {
     "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "chart.js": "^2.7.2",
+    "hrs": "^1.0.0",
+    "http-server": "^0.11.1",
+    "moment": "^2.22.2"
   }
 }
