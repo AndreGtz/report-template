@@ -6,22 +6,23 @@ html
     .container
       .header
         span.title.bold CAEBES
-        span.date #{date}
+        span(class="date clearfix") #{date}
       hr.top
       each vehicle in units
         div(class='data vehicle')
-          .name
-            span.name #{vehicle.unit}
-          .stats
-            p 
-              span.bold Distancia
-              span.secondary : #{vehicle.distance}km
-            p 
-              span.bold Tiempo de encendido de motor
-              span.secondary : #{vehicle.engine}
-            p 
-              span.bold Uso de combustible aproximado
-              span.secondary : #{vehicle.gas}L
+          div(class='head clearfix')
+            .name
+              span #{vehicle.unit}
+            .stats
+              p 
+                span.bold Distancia
+                span.secondary : #{vehicle.distance}km
+              p 
+                span.bold Tiempo de encendido de motor
+                span.secondary : #{vehicle.engine}
+              p 
+                span.bold Uso de combustible aproximado
+                span.secondary : #{vehicle.gas}L
           .speeds(data-speed=vehicle.speeds)
             canvas.chart
         hr

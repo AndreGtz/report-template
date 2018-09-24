@@ -1,29 +1,9 @@
-:root{
-  /* colors */
-  --highlight: #C3DF4E;
-  --#4A581E: #4A581E;
-  --primary: #65A29A;
-  --secondary: #455181;
 
-  /* document size */
-  --doc-margin-side: 35px;
-  --doc-margin-top: 75px;
-  --doc-height: 1122px;
-  --doc-width: 793px;
-}
-
-@media print {
+/* @media print { */
   .container {
     margin: 75px 35px;
     height: calc(1122px - 75px);
     width: calc(793px - 35px);
-  }
-
-  .header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .header > .title {
@@ -35,29 +15,51 @@
   .header > .date {
     font-family: sans-serif;
     color: #65A29A;
+    float: right;
   }
 
-  .data {
+  .vehicle {
+    position: relative;
     font-family: sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
-    align-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* flex-flow: row wrap; */
+    /* align-content: space-between; */
     margin: 3rem 0 3rem;
   }
 
-  .data > .name {
+  .vehicle .head{
+    width: 100%;
+    position: relative;
+  }
+
+  .clearfix:before, 
+  .clearfix:after {
+    content: " ";
+    display: table;
+  }
+
+  .clearfix:after {
+    clear: both;
+  }
+
+  .vehicle .head .name {
+    width: 50%;
+    float: left;
+    line-height: 118px;
     font-family: monospace;
     font-size: 2em;
     color: #65A29A;
   }
-
-  .data .speeds{
+  .vehicle .head .stats{
+    float: right;
+    width: 50%
+  }
+  .vehicle .speeds{
     width: 100%;
     margin-top: 1rem;
   }
-
 
   hr.top {
     background-color: #4A581E;
@@ -73,4 +75,4 @@
   .secondary {
     color: #455181;
   }
-}
+/* } */
