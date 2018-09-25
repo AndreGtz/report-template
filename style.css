@@ -1,30 +1,54 @@
-  .container {
-    margin: 75px 35px;
-    height: calc(1122px - 75px);
-    width: calc(793px - 35px);
-  }
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
 
-  .header > .title {
+html {
+  box-sizing: border-box;
+  font-size: 100%; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  h1{
     font-family: monospace;
     font-size: 2em;
     color: #C3DF4E;
   }
 
-  .header > .date {
+  .container {
+    width: 100%;
+    max-width: 595px;
+    margin-right: auto;
+    margin-left: auto; 
+  }
+
+  .header h1{
+    float: left;
+    margin: 0;
+  }
+
+  .header .date {
     font-family: sans-serif;
-    color: #65A29A;
+    color: rgb(39, 180, 161);
     float: right;
   }
 
   .vehicle {
     position: relative;
     font-family: sans-serif;
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* flex-flow: row wrap; */
-    /* align-content: space-between; */
-    margin: 3rem 0 3rem;
+    margin-bottom: 1rem 0;
   }
 
   .vehicle .head{
@@ -43,7 +67,7 @@
   }
 
   .vehicle .head .name {
-    width: 50%;
+    width: 30%;
     float: left;
     line-height: 118px;
     font-family: monospace;
@@ -52,10 +76,10 @@
   }
   .vehicle .head .stats{
     float: right;
-    width: 50%
+    width: 70%
   }
-  .vehicle .speeds{
-    width: 100%;
+  .vehicle img{
+    max-width: 446px;
     margin-top: 1rem;
   }
 

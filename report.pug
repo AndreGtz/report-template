@@ -4,9 +4,9 @@ html
       include style.css
   body
     .container
-      .header
-        span.title.bold CAEBES
-        span(class="date clearfix") #{date}
+      div(class="header clearfix")
+        h1 CAEBES
+        span(class="date") #{date}
       hr.top
       each vehicle in units
         div(class='data vehicle')
