@@ -23,8 +23,5 @@ html
               p 
                 span.bold Uso de combustible aproximado
                 span.secondary : #{vehicle.gas}L
-          .speeds(data-speed=vehicle.speeds)
-            canvas.chart
+            img(src=vehicle.graph, alt="")
         hr
-    script(src='node_modules/chart.js/dist/Chart.bundle.min.js')
-    script(src='app.js')
