@@ -23,5 +23,20 @@ html
               p 
                 span.bold Uso de combustible aproximado
                 span.secondary : #{vehicle.gas}L
-            img(src=vehicle.graph, alt="")
+              p
+                span.bold Activaciones del switch
+                span.secondary : #{vehicle.motor} veces
+              p
+                span.bold Velocidad máxima
+                span.secondary : #{vehicle.speedMax}
+              each stop in vehicle.stops
+                p
+                  span.secondary se 
+                  span.bold detuvo 
+                  span.secondary en #{stop.address} 
+                  span.secondary a las 
+                  span.bold #{stop.hora} 
+                  span.secondary durante 
+                  span.bold #{stop.time} 
+                  span.secondary minutos
         hr
