@@ -31,7 +31,7 @@ html {
     width: 100%;
     max-width: 595px;
     margin-right: auto;
-    margin-left: auto; 
+    margin-left: auto;
   }
 
   .header{
@@ -60,7 +60,7 @@ html {
     position: relative;
   }
 
-  .clearfix:before, 
+  .clearfix:before,
   .clearfix:after {
     content: " ";
     display: table;
@@ -77,6 +77,8 @@ html {
     font-family: monospace;
     font-size: 2em;
     color: #65A29A;
+    display: flex;
+    flex-direction: column;
   }
   .vehicle .head .stats{
     float: right;
@@ -100,4 +102,9 @@ html {
 
   .secondary {
     color: #455181;
+  }
+
+  a.link {
+    font-size: 0.7em;
+    color: #65A29A;
   }
