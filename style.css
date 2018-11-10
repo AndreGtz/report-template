@@ -77,9 +77,8 @@ html {
     font-family: monospace;
     font-size: 2em;
     color: #65A29A;
-    display: flex;
-    flex-direction: column;
   }
+
   .vehicle .head .stats{
     float: right;
     width: 70%
