@@ -32,7 +32,7 @@ html
                   span.secondary : #{vehicle.motor} veces
               p
                 span.bold Velocidad máxima
-                span.secondary : #{vehicle.speedMax}
+                span.secondary : #{vehicle.speedMax} km/hr
               each stop in vehicle.stops
                 p
                   span.secondary se 
@@ -42,5 +42,8 @@ html
                   span.bold #{stop.hora} 
                   span.secondary durante 
                   span.bold #{stop.time} 
-                  span.secondary minutos
+                  span.secondary minutos. 
+                  span.secondary Se mantuvo encendida 
+                  span.bold #{stop.motorTime}
+                  span.secondary .
         hr
