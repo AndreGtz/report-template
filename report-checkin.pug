@@ -1,0 +1,22 @@
+html
+  head
+    style(media="screen, print")
+      include style.css
+  body
+    .container
+      div(class="header clearfix")
+        h1 CAEBES
+        span(class="date") #{date}
+      hr.top
+      each police in registros
+        p idPolicia: #{police.idPolicia}
+        p nombres: #{police.nombres}
+        p apellidoP: #{police.apellidoP}
+        p apellidoM: #{police.apellidoM}
+        p idZona: #{police.idZona}
+        p nombreZona: #{police.nombreZona}
+        p horaLlegada: #{dateFormat(police.horaLlegada)}
+        p horaSalida: #{dateFormat(police.horaSalida)}
+        p tiempoZona: #{police.tiempoZona}
+        hr
+
