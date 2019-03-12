@@ -1,0 +1,20 @@
+html
+  head
+    style(media="screen, print")
+      include style.css
+  body
+    .container
+      div(class="header clearfix")
+        h1 CAEBES
+        span(class="date") #{date}
+      hr.top
+      each police in registros
+        p idPolicia: #{police.id}
+        p nombres: #{police.usuario.nombres}
+        p apellidoP: #{police.usuario.apellidoPaterno}
+        p apellidoM: #{police.usuario.apellidoMaterno}
+        h2 Emergencias:
+        each emergencia in police.emergencias
+          p Hora: #{dateFormat(emergencia.fecha)}
+          p Direccion: #{emergencia.address}
+        hr
