@@ -13,8 +13,6 @@ html
           div(class='head clearfix')
             .name
               p #{vehicle.unit}
-              p
-                a(class="link" href=`https://app2.caebes.com/#/rutatoken/${vehicle.token}/${date}`) Ver recorrido
             .stats
               p 
                 span.bold Distancia
@@ -33,17 +31,7 @@ html
               p
                 span.bold Velocidad máxima
                 span.secondary : #{vehicle.speedMax} km/hr
-              each stop in vehicle.stops
-                p
-                  span.secondary se 
-                  span.bold detuvo 
-                  span.secondary en #{stop.address} 
-                  span.secondary a las 
-                  span.bold #{stop.hora} 
-                  span.secondary durante 
-                  span.bold #{stop.time} 
-                  span.secondary minutos. 
-                  span.secondary Se mantuvo encendida 
-                  span.bold #{stop.motorTime}
-                  span.secondary .
+              p
+                span.bold Kilometraje
+                span.secondary : #{vehicle.kilometraje} km
         hr
