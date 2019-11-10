@@ -25,9 +25,6 @@ html
                 p 
                   span.bold Uso de combustible aproximado
                   span.secondary : #{vehicle.gas}L ($#{Math.round((fuelPrices[fuels[vehicle.fuelType]] * vehicle.gas) * 100) / 100})
-                p
-                  span.bold Activaciones del switch
-                  span.secondary : #{vehicle.motor} veces
               p
                 span.bold Velocidad máxima
                 span.secondary : #{vehicle.speedMax} km/hr
