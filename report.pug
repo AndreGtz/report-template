@@ -21,7 +21,7 @@ html
                 - var fuels = ['magna', 'premium', 'diesel'];
                 p 
                   span.bold Tiempo de encendido de motor
-                  span.secondary : #{vehicle.engine}
+                  span.secondary : #{vehicle.tiempoEncendido}
                 p 
                   span.bold Uso de combustible aproximado
                   span.secondary : #{vehicle.gas}L ($#{Math.round((fuelPrices[fuels[vehicle.fuelType]] * vehicle.gas) * 100) / 100})
